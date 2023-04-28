@@ -27,3 +27,29 @@ function clearDisplay() {
     currDisplay.innerText = "";
     prevDisplay.innerText = "";
 }
+
+numbers.forEach((number) => {
+    number.addEventListener("click", () => {
+        appendNumber(number.innerText);
+    });
+});
+
+operands.forEach((operand) => {
+    operand.addEventListener("click", () => {
+        chooseOperation(operand.innerText);
+    });
+});
+
+clearBtn.addEventListener("click", () => {
+    clearDisplay();
+});
+
+equalBtn.addEventListener("click", () => {
+    getComputedStyle();
+    prevDisplay.innerText = "";
+});
+
+delBtn.addEventListener("click", () => {
+    currDisplay.innerText =
+     currDisplay.innerText.slice(0, -1);
+});
