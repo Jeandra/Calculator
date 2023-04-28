@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     background-color: #a0d7ff;
     height: 90vh;
     display: flex;
@@ -33,8 +33,8 @@ body {
 .calculator button {
     border: none;
     font-family: inherit;
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 300;
     color: hsl(108, 95%, 47%);
     background-color: hsl(230, 6%, 20%);
     border-radius: 10px;
@@ -51,7 +51,7 @@ body {
 }
 
 .calculator > .output {
-    font-size: 2rem;
+    font-size: 1.3rem;
     background-color: inherit;
     color: white;
     grid-column: 1 / -1;
