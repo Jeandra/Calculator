@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #a0d7ff;
+    background-color: #000;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
 .calculator {
     display: grid;
     grid-template-rows:
-    minmax(80px, auto)
+    minmax(70px, auto)
     repeat(5, 60px);
     grid-template-columns: repeat(4, 60px);
     justify-content: center;
@@ -34,7 +34,7 @@ body {
     border: none;
     font-family: inherit;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 400;
     color: hsl(108, 95%, 47%);
     background-color: hsl(230, 6%, 20%);
     border-radius: 10px;
