@@ -28,6 +28,32 @@ function clearDisplay() {
     prevDisplay.innerText = "";
 }
 
+function getComputedStyle(operand) {
+    let result;
+    const previousValue = parseFloat(prevDisplay.innerText);
+    const currentValue = parseFloat(currDisplay.innerText);
+
+    if (isNaN(previousValue) || isNaN(currentValue)) return;
+
+    switch (operation) {
+        case "+":
+            result = previousValue + currentValue;
+            break;
+        case "-":
+            result = previousValue - currentValue;
+            break; 
+        case "*":
+            result = previousValue * currentValue;
+            break; 
+        case "/":
+            result = previousValue / currentValue;
+            break;
+        default:
+            return;         
+    }
+    currDisplay.innerText = result;
+}
+
 numbers.forEach((number) => {
     number.addEventListener("click", () => {
         appendNumber(number.innerText);
